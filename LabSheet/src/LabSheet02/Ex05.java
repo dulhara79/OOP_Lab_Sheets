@@ -11,15 +11,15 @@ class EvenOddNumber  {
 public class Ex05 {
 	    public static void main(String[] args) {
 	        EvenOddNumber evenOddNumber = new EvenOddNumber();
-			Scanner scn = new Scanner(System.in);
+			Scanner in = new Scanner(System.in);
 
 	        System.out.print("Enter a number: ");
-			int number = scn.nextInt();
+			int number = in.nextInt();
 			
 	        boolean isNumberEven = evenOddNumber.findEvenOrOdd(number);
 			
 	        System.out.println("The number is " + (isNumberEven ? "even" : "odd"));
 
-	        scn.close();
+	        in.close();
 	    }
 }
