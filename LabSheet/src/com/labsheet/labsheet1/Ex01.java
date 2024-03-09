@@ -1,4 +1,4 @@
-package LabSheet01;
+package com.labsheet.labsheet1;
 
 public class Ex01 {
 	public static void main(String[] args) {
