@@ -12,36 +12,32 @@ public class Main {
 
 		Scanner scn = new Scanner(System.in);
 
-		// 1. Input a value for maxSubjects from keyboard
-		// 2. Using a for loop input marks
-		// 3. Calculate the avg marks
-		// 4. Use a try catch block to prevent the following run time errors
-		// (a) Input valid integers to the inputs
-		// (b) ArithmeticException division by zero
-		// (c) ArrayIndexOutOfBounds Exception
-
 		try {
+			// 1. Input a value for maxSubjects from keyboard
 			System.out.print("Enter a value for maxSubjects: ");
 			maxSubjects = scn.nextInt();
 
+			// 2. Using a for loop input marks
 			for (int i = 0; i < maxSubjects; i++) {
 				System.out.print("Enter marks for subject " + (i + 1) + ": ");
 				marks[i] = scn.nextInt();
 				total += marks[i];
 			}
 
+			// 3. Calculate the avg marks
 			avg = (double) total / maxSubjects;
 
 			System.out.println("Total marks: " + total);
 			System.out.println("Avarage of marks: " + avg);
 
+			// 4. Use a try catch block to prevent the following run time errors
 		} catch (ArithmeticException e) { // (b) ArithmeticException division by zero
 			System.out.println("ArithmeticException division by zero: " + e);
 		} catch (InputMismatchException e) { // (a) Input valid integers to the inputs
 			System.out.println("Input valid integers to the inputs: " + e);
 		} catch (ArrayIndexOutOfBoundsException e) { // (c) ArrayIndexOutOfBounds Exception
 			System.out.println("ArrayIndexOutOfBounds Exception: " + e);
-		} catch (Exception e) { //To catch another big exceptions
+		} catch (Exception e) { // To catch another big exceptions
 			System.out.println("ERROR: " + e);
 		}
 
