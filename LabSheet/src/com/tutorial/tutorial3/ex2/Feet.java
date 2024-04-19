@@ -1,4 +1,4 @@
-package com.tutorial.tutorial3_ex2;
+package com.tutorial.tutorial3.ex2;
 
 public class Feet {
 	private int feet;
