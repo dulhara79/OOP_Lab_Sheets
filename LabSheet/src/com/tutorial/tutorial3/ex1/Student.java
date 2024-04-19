@@ -1,4 +1,4 @@
-package com.tutorial.tutorial3_ex1;
+package com.tutorial.tutorial3.ex1;
 
 public class Student {
 	private int studentID;
