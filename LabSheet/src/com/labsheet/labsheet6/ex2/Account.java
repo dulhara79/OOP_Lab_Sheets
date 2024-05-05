@@ -1,4 +1,4 @@
-package com.labsheet.labsheet6.ex1;
+package com.labsheet.labsheet6.ex2;
 
 public class Account {
 
@@ -27,13 +27,17 @@ public class Account {
 
 	public void withdraw(double withdrawAmount) throws InsufficientBalanceException {
 
-		if (this.amount < withdrawAmount) {
+		if (this.amount <= withdrawAmount) {
 
 			throw new InsufficientBalanceException(withdrawAmount);
 		} else {
 
 			this.amount -= withdrawAmount;
 		}
+	}
+	
+	public double getAmount() {
+		return this.amount;
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.labsheet.labsheet6.ex1;
+package com.labsheet.labsheet6.ex2;
 
 public class InsufficientBalanceException extends Exception {
 
